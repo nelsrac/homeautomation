@@ -3,11 +3,6 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-  issues: write
-  pull-requests: write
-
 name: release-please
 
 jobs:
@@ -16,12 +11,14 @@ jobs:
     steps:
       - uses: googleapis/release-please-action@c2a5a2bd6a758a0937f1ddb1e8950609867ed15c # v4.3.0
         id: release
+        with:
+          token: ${{ secrets.RELEASE }}
 
       - name: Add File to Release (blueprint/yacc)
         id: add_blueprint
         if: ${{ steps.release.outputs['blueprint/yacc--release_created'] }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run:
+          GITHUB_TOKEN: ${{ secrets.RELEASE }}
+        run: |
           gh release upload ${{ steps.release.outputs.tag_name }} blueprint/yacc/*.yaml
           gh release upload ${{ steps.release.outputs.tag_name }} LICENSE
