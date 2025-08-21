@@ -14,11 +14,11 @@ jobs:
         with:
           token: ${{ secrets.RELEASE }}
 
+      - run: echo "${{ steps.release.outputs.tag_name }}"
       - name: Add File to Release (blueprint/yacc)
         id: add_blueprint
         if: ${{ steps.release.outputs['blueprint/yacc--release_created'] }}
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE }}
           tag: ${{ steps.release.outputs.tag_name }}
-        run: |
-          gh release upload $tag blueprint/yacc/yacc.yaml LICENSE
+        run: echo $tag; gh release upload $tag blueprint/yacc/yacc.yaml LICENSE
