@@ -14,7 +14,7 @@ jobs:
         with:
           token: ${{ secrets.RELEASE }}
 
-      - run: echo "${{ steps.release.outputs.tag_name }}"
+      - run: echo "${{ steps.release.outputs['blueprint/yacc--tag_name'] }}"
       - name: Add File to Release (blueprint/yacc)
         id: add_blueprint
         if: ${{ steps.release.outputs['blueprint/yacc--release_created'] }}
