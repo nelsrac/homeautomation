@@ -7,7 +7,29 @@
             "package-name": "yacc",
             "pull-request-header": "🤖 Release for Blueprints",
             "release-type": "simple",
-            "version-file": ".version"
+            "version-file": ".version",
+            "changelog-sections": [
+                {
+                    "type": "feat",
+                    "section": "Features",
+                    "hidden": false
+                },
+                {
+                    "type": "fix",
+                    "section": "Bug Fixes",
+                    "hidden": false
+                },
+                {
+                    "type": "docs",
+                    "section": "Documentation",
+                    "hidden": false
+                },
+                {
+                    "type": "chore",
+                    "section": "Maintenance",
+                    "hidden": false
+                }
+            ]
         }
     }
 }
