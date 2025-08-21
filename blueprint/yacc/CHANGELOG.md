@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/nelsrac/homeautomation/compare/yacc-v0.2.2...yacc-v0.2.3) (2025-08-21)
+
+
+### Documentation
+
+* **yacc:** add lala ([67a9e72](https://github.com/nelsrac/homeautomation/commit/67a9e72b2ebfceb39125700571a460532277adee))
+
 ## [0.2.2](https://github.com/nelsrac/homeautomation/compare/yacc-v0.2.1...yacc-v0.2.2) (2025-08-21)
 
 
