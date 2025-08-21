@@ -16,6 +16,9 @@ jobs:
 
       - run: echo "${{ steps.release.outputs['blueprint/yacc--tag_name'] }}"
       - run: echo $PWD
+      - run: ls -l
+      - uses: actions/checkout@v5
+      - run: ls -l
       - name: Add File to Release (blueprint/yacc)
         id: add_blueprint
         if: ${{ steps.release.outputs['blueprint/yacc--release_created'] }}
