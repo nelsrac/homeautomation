@@ -1,0 +1,13 @@
+{
+    "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+    "separate-pull-requests": true,
+    "packages": {
+        "blueprint/yacc": {
+            "initial-version": "0.1.0",
+            "package-name": "yacc",
+            "pull-request-header": "🤖 Release for Blueprints",
+            "release-type": "simple",
+            "version-file": ".version"
+        }
+    }
+}
