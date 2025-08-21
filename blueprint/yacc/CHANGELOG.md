@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.1](https://github.com/nelsrac/homeautomation/compare/yacc-v0.2.0...yacc-v0.2.1) (2025-08-21)
+
+
+### Documentation
+
+* **yacc:** update content ([8d10136](https://github.com/nelsrac/homeautomation/commit/8d10136702f574ade45a60f83175a6f645cd188e))
+
+
+### Maintenance
+
+* **yacc:** fix typo ([3a3691e](https://github.com/nelsrac/homeautomation/commit/3a3691ead85480a250ffe1d03120a296681cefea))
+
 ## [0.2.0](https://github.com/nelsrac/homeautomation/compare/yacc-v0.1.0...yacc-v0.2.0) (2025-08-21)
 
 
