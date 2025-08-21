@@ -21,4 +21,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE }}
           tag: ${{ steps.release.outputs.tag_name }}
-        run: echo $tag; gh release upload $tag blueprint/yacc/yacc.yaml LICENSE
+        run: echo $tag; gh release upload ${{ steps.release.outputs['blueprint/yacc--tag_name'] }} blueprint/yacc/yacc.yaml LICENSE
