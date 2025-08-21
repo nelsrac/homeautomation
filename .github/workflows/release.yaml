@@ -19,6 +19,6 @@ jobs:
         if: ${{ steps.release.outputs['blueprint/yacc--release_created'] }}
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE }}
+          tag: ${{ steps.release.outputs.tag_name }}
         run: |
-          gh release upload ${{ steps.release.outputs.tag_name }} blueprint/yacc/yacc.yaml
-          gh release upload ${{ steps.release.outputs.tag_name }} LICENSE
+          gh release upload $tag blueprint/yacc/yacc.yaml LICENSE
