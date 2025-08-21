@@ -36,7 +36,10 @@ blueprint:
 
     - Control by illuminance sensor
       Lorem Ipsum dolor. LalaLand
-
+    
+    - super new feature
+      ljlaja
+      
     lala
     </details>
 
